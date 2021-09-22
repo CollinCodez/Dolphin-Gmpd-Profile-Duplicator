@@ -16,3 +16,7 @@ The Java version of this project (the only one currently completed) requires Jav
     - If the profile is on another drive, you may enter it as: `F:/path/to/profile/`
  5. Enter the number of copies of the profile you would like to make, then press Enter
  6. Enjoy the replicated profiles!
+
+### File Information
+ - [IndexedProfileMaker.gpj](https://github.com/CollinCodez/Dolphin-Gmpd-Profile-Duplicator/blob/main/Java%20Version/IndexedProfileMaker.gpj) is a JGrasp Java Project file. This is what was used to create the Jar file.
+ - The [Classes](https://github.com/CollinCodez/Dolphin-Gmpd-Profile-Duplicator/tree/main/Java%20Version/classes) folder contains the compiled Java class files. If you compile this yourself, you can remake these files. 
