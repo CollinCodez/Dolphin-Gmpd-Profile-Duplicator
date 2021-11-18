@@ -11,10 +11,10 @@ public class IndexedProfileMaker
    public static void main(String args[]) throws IOException
    {
       //Setup
-      String filePath = new String();// My File path: "B:\\Wii Games & Saves\\Dolphins\\Dolphin 2\\Sys\\Profiles\\GCPad\\";
+      String filePath = new String();
       String fileName = new String();//.ini files
       int profileCount = -1;
-       
+
       Scanner fileReader;
       Scanner keyboardReader = new Scanner(System.in);
       ArrayList<String> profileData = new ArrayList<String>();
@@ -55,13 +55,13 @@ public class IndexedProfileMaker
       for(int profileNum = 0; profileNum < profileCount; profileNum++){
          FileWriter fW = new FileWriter(filePath + fileName + " " + profileNum + ".ini");
          PrintWriter output = new PrintWriter(fW);
-         
+
          profileData.set(1, controllerApiType + profileNum + controllerName);
 
          for(int lcv = 0; lcv < profileData.size(); lcv++){
             output.println(profileData.get(lcv));
          }
-         
+
          output.close();
          fW.close();
       }
