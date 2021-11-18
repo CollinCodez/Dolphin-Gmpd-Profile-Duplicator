@@ -11,7 +11,7 @@ Future plans for this project include to:
 The Java versions of this project require Java to be installed on your system. You can check if it is installed by opening a command prompt and running `java -version`
 
 ## File Information
- - [IndexedProfileMaker.gpj](https://github.com/CollinCodez/Dolphin-Gmpd-Profile-Duplicator/blob/main/Java%20Version/IndexedProfileMaker.gpj) is a JGrasp Java Project file. This is what was used to create the Jar file.
+ - [IndexedProfileMaker.gpj](https://github.com/CollinCodez/Dolphin-Gmpd-Profile-Duplicator/blob/main/Java%20Version/Indexed%20Profile%20Maker/IndexedProfileMaker.gpj) is a JGrasp Java Project file. This is what was used to create the Jar file.
 
 # Tools
 
