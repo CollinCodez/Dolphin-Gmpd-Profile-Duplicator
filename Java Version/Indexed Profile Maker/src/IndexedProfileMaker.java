@@ -65,6 +65,8 @@ public class IndexedProfileMaker
          output.close();
          fW.close();
       }
+
       keyboardReader.close();
+      fileReader.close();
    }//End of Code
 }
