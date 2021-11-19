@@ -14,21 +14,44 @@ public class IndexedProfileMaker
       Scanner fileReader;
       Scanner keyboardReader = new Scanner(System.in);
 
-      String filePath = new String();
-      String fileName = new String();//.ini files
+      File profileDir;
+
+      String profileName = new String();//.ini files
+      File profileToCopy;
+
       int profileCount = -1;
 
       ArrayList<String> profileData = new ArrayList<String>();
 
 
       // Inputs
-      System.out.print("Please enter the name of the controller profile you would like to replicate: ");
-      fileName = keyboardReader.nextLine();
+      do{// Get the path containing the gamepad profile
+         String filePath = new String();
 
-      System.out.print("Please enter the path to the folder where this profile is currently saved: ");
-      filePath = keyboardReader.nextLine();
+         System.out.print("Please enter the path to the folder where this profile is currently saved: ");
+         filePath = keyboardReader.nextLine();
 
-      fileReader = new Scanner(new File(filePath + fileName + ".ini"));
+         profileDir = new File(filePath);
+
+         if(!profileDir.isDirectory()){
+            System.out.println("The path you entered was not a valid directory! Please enter a valid directory.");
+         }
+      }while(!profileDir.isDirectory());
+
+
+      do{// Get the name of the controller profile to copy
+         System.out.print("Please enter the name of the controller profile you would like to replicate: ");
+         profileName = keyboardReader.nextLine();
+
+         profileToCopy = new File(profileDir, profileName + ".ini");
+
+         if(!profileToCopy.isFile()){
+            System.out.println("No gamepad profile with that name exists! Please enter a valid profile name.");
+         }
+      }while(!profileToCopy.isFile());
+
+
+      fileReader = new Scanner(profileToCopy);
 
       do{
          System.out.print("Please enter the number of controller profiles you would like to make: ");
@@ -54,7 +77,8 @@ public class IndexedProfileMaker
 
       // Outputs
       for(int profileNum = 0; profileNum < profileCount; profileNum++){
-         FileWriter fW = new FileWriter(filePath + fileName + " " + profileNum + ".ini");
+         File currProfile = new File(profileDir, profileName + " " + profileNum + ".ini");
+         FileWriter fW = new FileWriter(currProfile);
          PrintWriter output = new PrintWriter(fW);
 
          profileData.set(1, controllerApiType + profileNum + controllerName);
