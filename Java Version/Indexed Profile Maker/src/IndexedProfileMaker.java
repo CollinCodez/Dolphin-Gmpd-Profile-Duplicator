@@ -10,23 +10,24 @@ public class IndexedProfileMaker
 {
    public static void main(String args[]) throws IOException
    {
-      //Setup
+      // Setup
+      Scanner fileReader;
+      Scanner keyboardReader = new Scanner(System.in);
+
       String filePath = new String();
       String fileName = new String();//.ini files
       int profileCount = -1;
 
-      Scanner fileReader;
-      Scanner keyboardReader = new Scanner(System.in);
       ArrayList<String> profileData = new ArrayList<String>();
 
 
-      //Inputs
+      // Inputs
       System.out.print("Please enter the name of the controller profile you would like to replicate: ");
       fileName = keyboardReader.nextLine();
 
       System.out.print("Please enter the path to the folder where this profile is currently saved: ");
       filePath = keyboardReader.nextLine();
-      
+
       fileReader = new Scanner(new File(filePath + fileName + ".ini"));
 
       do{
@@ -45,13 +46,13 @@ public class IndexedProfileMaker
       }
 
 
-      //Calculations
+      // Calculations
       String controllerProfileType = profileData.get(1);
       String controllerApiType = controllerProfileType.substring(0, controllerProfileType.indexOf("/")+1);
       String controllerName = controllerProfileType.substring(controllerProfileType.lastIndexOf("/"));
 
 
-      //Outputs
+      // Outputs
       for(int profileNum = 0; profileNum < profileCount; profileNum++){
          FileWriter fW = new FileWriter(filePath + fileName + " " + profileNum + ".ini");
          PrintWriter output = new PrintWriter(fW);
@@ -66,7 +67,7 @@ public class IndexedProfileMaker
          fW.close();
       }
 
-      keyboardReader.close();
       fileReader.close();
-   }//End of Code
+      keyboardReader.close();
+   }// End of Code
 }

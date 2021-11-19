@@ -1,4 +1,4 @@
-!1554;s
+!1542;s
 A
 SAU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 SCU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
@@ -14,11 +14,9 @@ s#j0
 s#l0
 s#m0src
 s#n0classes
-s#q0ExampleProfiles
-!955;d
-[\012  grasp [\012   legendy -1.75\012   legendx -0.25\012   version 1\012   winflags 3\012   eheight 972\012   ewidth 960\012   height 972\012   width 960\012   wbp 0\012   initlayout 0\012   yoffs 0.5\012   xoffs 0.5\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012  node [\012   ClassInfo [\012    fields "IndexedProfileMaker\\011()V\\011c\\0111\\011\\011\\011IndexedProfileMaker\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011IndexedProfileMaker"\012    condition 0\012    access2 0\012    access 2490401\012    classname "IndexedProfileMaker"\012    fromclassfiledate 1637266446252\012    fromclassfilename "%\011classes%sIndexedProfileMaker.class"\012    fromfilename "%\011src%sIndexedProfileMaker.java"\012   ]\012   id 0\012   graphics [\012    center [\012     x 0.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012 ]!154;u
-a0	b68	c255	f%\011IndexedProfileMaker.jar	g%\011IndexedProfileMaker.zip	hManifest-Version\0111.0\011Main-Class\011IndexedProfileMaker	iIndexedProfileMaker!37;a
-a%\011IndexedProfileMaker_doc	b	c1	d0!35;g
-%\011src%sIndexedProfileMaker.java
+s#p0doc
+!340;d
+[\012  grasp [\012   legendy 0.0\012   legendx 0.0\012   version 1\012   winflags 3\012   eheight 973\012   ewidth 960\012   height 973\012   width 960\012   wbp 0\012   initlayout 0\012   yoffs -60.5\012   xoffs 0.5\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012 ]!35;g
+%\011src%sProfileFolderCopier.java
 !35;f
-%\011src%sIndexedProfileMaker.java
+%\011src%sProfileFolderCopier.java

@@ -3,4 +3,5 @@
 
 # Compiled Java files & folders
 classes/
+*.class
 *.jar
