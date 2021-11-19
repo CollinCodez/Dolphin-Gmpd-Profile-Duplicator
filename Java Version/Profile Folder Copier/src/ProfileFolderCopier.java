@@ -117,7 +117,7 @@ public class ProfileFolderCopier
          originalDir = new File(originFolderPath);
 
          if(!originalDir.isDirectory()){
-            System.out.println("The path you entered was not a directory! Please enter a directory.");
+            System.out.println("The path you entered was not a valid directory! Please enter a valid directory.");
          }
       }while(!originalDir.isDirectory());
 
@@ -132,7 +132,7 @@ public class ProfileFolderCopier
          dolphinsDir = new File(dolphinsPath);
 
          if(!dolphinsDir.isDirectory()){
-            System.out.println("The path you entered was not a directory! Please enter a directory.");
+            System.out.println("The path you entered was not a valid directory! Please enter a valid directory.");
          }
       }while(!dolphinsDir.isDirectory());
 
@@ -142,7 +142,7 @@ public class ProfileFolderCopier
 
          do{// Get the names of the Portable Dolphin's folders
          System.out.println("Please enter the base name of folders containing the portable dolphins (Include any spaces!): ");
-         System.out.print("Note: If your dolphins are simply numbered, simply press enter:");
+         System.out.print("Note: If your dolphins are simply numbered, simply press enter: ");
             dolphinsNames = keyboardReader.nextLine();
 
             tempDir = new File(dolphinsDir, dolphinsNames + 1);
